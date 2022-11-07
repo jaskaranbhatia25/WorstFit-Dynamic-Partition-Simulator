@@ -1,9 +1,4 @@
-# WARNING
-Do not upload any files in this repository to public websites. If you want to clone this repository, please make sure to keep it private.
 
-# memsim
-
-skeleton code for Assignment 5 Question 1
 
 # sample test files:
 Make sure you also make your own test files.
