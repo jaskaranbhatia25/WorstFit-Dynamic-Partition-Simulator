@@ -1,4 +1,8 @@
+Throughout the simulation your program will maintain an ordered list of dynamic partitions. Some partitions will be marked as occupied, the rest will be marked as free. Occupied partitions will have a numeric tag attached to it. Each partition will also contain its size in bytes, and the starting address. The starting address of the first partition should be 0. Your simulator will manipulate this list of partitions as a result of processing requests. Allocation requests will be processed by finding the most appropriately sized partition and then allocating a memory from it. Deallocation requests will free up any relevant occupied partitions, and also merging any adjacent free partitions.
 
+The parameter page_size will denote the page size and requests will contain a list of all requests to process. The requests are described using the Request class:
+
+When tag>=0, then this is an allocation request, and the size field will then denote the size of the request. If tag<0 then this is a deallocation request, in which case the size field is not used. You will report the results of the simulation via the result parameter.
 
 # sample test files:
 Make sure you also make your own test files.
